@@ -4,6 +4,15 @@ public class Limits {
 
 	private int minimum;
 	private int maximum;
+	private String profile;
+
+	public String getProfile() {
+		return profile;
+	}
+
+	public void setProfile(String profile) {
+		this.profile = profile;
+	}
 
 	public Limits() {
 	}
@@ -16,10 +25,10 @@ public class Limits {
 		this.minimum = minimum;
 	}
 
-	public Limits(int minimum, int maximum) {
-		super();
+	public Limits(int minimum, int maximum, String profile) {
 		this.minimum = minimum;
 		this.maximum = maximum;
+		this.profile = profile;
 	}
 
 	public int getMaximum() {

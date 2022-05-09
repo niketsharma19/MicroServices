@@ -17,12 +17,12 @@ public class LimitsController {
 
 	@GetMapping(value = "/getDefault")
 	public Limits getLimits() {
-		return new Limits(0, 100);
+		return new Limits(0, 100, "Fake");
 	}
 
 	@GetMapping(value = "/getProps")
 	public Limits getLimitsProps() {
-		return new Limits(myConfigurations.minimum, myConfigurations.maximum);
+		return new Limits(myConfigurations.minimum, myConfigurations.maximum, myConfigurations.profile);
 	}
 
 }
