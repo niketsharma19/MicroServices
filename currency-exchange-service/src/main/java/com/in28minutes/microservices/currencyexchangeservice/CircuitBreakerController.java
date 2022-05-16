@@ -10,7 +10,7 @@ public class CircuitBreakerController {
 	
 	private Logger logger = 
 				LoggerFactory.getLogger(CircuitBreakerController.class);
-	
+	// Resilience 4j Implementation
 	@GetMapping("/sample-api")
 	//@Retry(name = "sample-api", fallbackMethod = "hardcodedResponse")
 	//@CircuitBreaker(name = "default", fallbackMethod = "hardcodedResponse")
